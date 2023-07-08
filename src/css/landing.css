@@ -1,0 +1,22 @@
+.landing{
+    background-image: url('../assets/pexels-dmitry-demidov-3783471.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+      height: 100%;
+}
+.in{
+    color:bisque;
+    display:grid;
+    place-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    font-size: 10rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 1000;
+}
+
+button:hover{
+    background-color: bisque;
+    color:black;
+}
