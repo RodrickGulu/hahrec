@@ -1,11 +1,16 @@
 import React from 'react'
 import '../css/landing.css';
 import TypeWriterEffect from 'react-typewriter-effect';
-import "bootstrap/dist/css/bootstrap.min.css";
 import logo from '../assets/pngwing.com.png'; 
-
+import { useNavigate } from 'react-router-dom';
 
 export default function Landing() {
+  const navigate = useNavigate();
+
+  function handleClick(event) {
+
+    navigate('/hitafterhit/book');
+  }
   return (
     <div className='landing container-fluid center pt-4'>
       <div className='container-fluid center in'>
@@ -47,7 +52,7 @@ export default function Landing() {
 
   <div className='row mb-3'>
     <div>
-    <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill"><b>Book a Session</b></button>
+    <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill" onClick={handleClick}><b>Book a Session</b></button>
     </div>
     <div>
     <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill" href='#services'><b>Explore Website</b></button>

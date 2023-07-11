@@ -10,32 +10,39 @@ import {
   faGithub,
   faTiktok
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { 
+  faEnvelope,
+  faAngleDoubleUp
+} from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
   return (
     <div className='m-2'>
-         <footer id="colophon" className="site-footer mt-5 mb-0">
+         <footer id="colophon" className="site-footer mt-5 mb-1">
 
-<div className="bg-dark footer row p-2  container-fluid m-0">
-  <div className='col-sm'><a href='#a' className='text-reset'><FontAwesomeIcon icon={faTwitter} size='2x'/></a></div>
-  <div className='col-sm'><a href='#a' className='text-reset'><FontAwesomeIcon icon={faFacebook} size='2x'/></a></div>
-  <div className='col-sm'><a href='#a' className='text-reset'><FontAwesomeIcon icon={faInstagram} size='2x'/></a></div>
-  <div className='col-sm'><a href='#a' className='text-reset'><FontAwesomeIcon icon={faYoutube} size='2x'/></a></div>
-  <div className='col-sm'><a href='#a' className='text-reset'><FontAwesomeIcon icon={faEnvelope} size='2x'/></a></div>
-  <div className='col-sm'><a href='#a' className='text-reset'><FontAwesomeIcon icon={faLinkedin} size='2x'/></a></div>
-  <div className='col-sm'><a href='#a' className='text-reset'><FontAwesomeIcon icon={faGithub} size='2x'/></a></div>
-  <div className='col-sm'><a href='#a' className='text-reset'><FontAwesomeIcon icon={faTiktok} size='2x'/></a></div>
+<div className="bg-dark footer row pt-3 container-fluid m-0">
+  <ul className='list-unstyled'>
+  <li ><a href='#a' className='text-reset'><FontAwesomeIcon icon={faTwitter} /></a></li>
+  <li ><a href='#a' className='text-reset'><FontAwesomeIcon icon={faFacebook} /></a></li>
+  <li ><a href='#a' className='text-reset'><FontAwesomeIcon icon={faInstagram} /></a></li>
+  <li ><a href='#a' className='text-reset'><FontAwesomeIcon icon={faYoutube} /></a></li>
+  <li ><a href='#a' className='text-reset'><FontAwesomeIcon icon={faEnvelope} /></a></li>
+  <li ><a href='#a' className='text-reset'><FontAwesomeIcon icon={faLinkedin} /></a></li>
+  <li ><a href='#a' className='text-reset'><FontAwesomeIcon icon={faGithub} /></a></li>
+  <li ><a href='#a' className='text-reset'><FontAwesomeIcon icon={faTiktok} /></a></li>
+  </ul>
 </div>
 
+
 <div className="page-scroll">
-        <a href="#top" className="rectangle">
-            <i className="fa fa-angle-double-up"></i>
+        <a href="#top" className='text-reset mt-2'>
+            <FontAwesomeIcon icon={faAngleDoubleUp}/>
         </a>
     </div>
 
 <div className="container text-center">
-    <p className="copyright">HitAfterHit &copy;2023</p>
+    <p className="copyright">&copy;2023 Hit After Hit Records</p>
+    <p>All rights reserved</p>
 </div>
 
 </footer>
