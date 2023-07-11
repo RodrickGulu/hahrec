@@ -47,10 +47,10 @@ export default function Landing() {
 
   <div className='row mb-3'>
     <div>
-    <button type="submit" className="btn btn-lg btn-outline-light m-4"><b>Book a Session</b></button>
+    <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill"><b>Book a Session</b></button>
     </div>
     <div>
-    <button type="submit" className="btn btn-lg btn-outline-light m-4" href='#services'><b>Explore Website</b></button>
+    <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill" href='#services'><b>Explore Website</b></button>
     </div>
   </div>
       </div>

@@ -1,67 +1,60 @@
 import React from 'react'
 import '../css/services.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import{
+    faVideoCamera,
+    faMusic,
+    faComments,
+    faCalendarWeek
+} from '@fortawesome/free-solid-svg-icons';
 
 export default function Services() {
   return (
-    <div className='container mt-3 services'>
+    <div className='container-flex m-3 services'>
         <div className='row'>
             <h1>Our Services</h1>
         </div>
-        <div className='row production'>
+        <div className='row production border rounded m-2 pt-2'>
+            <FontAwesomeIcon icon={faMusic} size='6x'/>
             <h2>Music Production</h2>
-            <div className='col-sm border rounded m-2'>
-                <h4>Music Recording</h4>
-                <p>Hit after Hit is a studio that prides itself with providing modern facilities for your recording needs.</p>
-                <p>In need of a modern high quality recording services, go no further.</p>
-                <div>
-                <button type="submit" className="btn btn-lg btn-outline-light m-4"><b>Live sessions</b></button>
-            </div>
-
-            </div>
-            <div className='col-sm border rounded m-2'>
-                <h4>Music Mastrering</h4>
-                <p>With our able and talented producer at the wheel, fear nothing.</p>
-                <p>We pride ourselves in having one of the best producers of the modern age, so if you have your projects that need mastering, we are your destination.</p>
-                <div>
-                <button type="submit" className="btn btn-lg btn-outline-light m-4"><b>Live Sessions</b></button>
-            </div>
-            </div>
-            <div className='col-sm border rounded m-2'>
-                <h4>Final Product</h4>
-                <p>We give you, the artist, all the freedom you need to make the final product exactly as you wish.</p>
-                <p>Our producer is a colabarative one and engaging, you dont have to fear about your music being transformed to something you dont like.</p>
-                <div>
-                <button type="submit" className="btn btn-lg btn-outline-light m-4"><b>Demo Projects</b></button>
-            </div>
-            </div>
-            <div className='col-sm border rounded m-2'>
-                <h4>Marketing and Distribution</h4>
-                <p>Music is all about marketing and making sure that it is distributed to the right fanbase.</p>
-                <p>Here at Hit After Hit, we provide all the necessary support to our artists to make sure their projects are properly marketed and distributed.</p>
-                <div>
-                <button type="submit" className="btn btn-lg btn-outline-light m-4"><b>Marketing Team</b></button>
-            </div>
-            </div>
+            <p>Experience the transformative power of our music production services. Our dedicated team of producers, engineers, and musicians is here to bring your musical vision to life.</p>
+            <p>With state-of-the-art studios and cutting-edge technology, we ensure that every element of your music is elevated to new heights.</p>
+            <p>From recording and arrangement to mixing and mastering, our meticulous approach guarantees impeccable sound quality and attention to detail.</p>
+            <p>We work closely with you, capturing your unique style and genre, to create music that resonates with emotion and captivates listeners.</p>
+            <p>Whether you're a solo artist, band, or composer, our tailored music production solutions empower your artistic journey and help you make a lasting impact in the industry.</p>
             <div>
-                <button type="submit" className="btn btn-lg btn-outline-light m-4"><b>Book a Session</b></button>
+                <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill"><b>Book a Session</b></button>
             </div>
         </div>
-        <div className='row'>
-            <h2>Music Classes</h2>
-            <div className='col-md'>
-                Production Classes
-            </div>
-            <div className='col-md'>
-                Notes and backup classes
+        <div className='row border rounded mt-5 m-2 class pt-2'>
+        <FontAwesomeIcon icon={faVideoCamera} size='6x'/>
+            <h2>Video Production</h2>
+            <div className='col-md m-2'>
+                <p>You want to produce a video song? No problem, Hit After Hit is here for you</p>
+                <p>From concept to delivery, we ensure every frame showcases your story in high-definition brilliance.</p>
+                <div>
+                <button type="submit" className="btn btn-lg btn-outline-dark m-4 rounded-pill"><b>Book a Session</b></button>
+                </div>
             </div>
         </div>
-        <div className='row'>
-            <h2>Rent a Studio space</h2>
+        <div className='row border rounded mt-5 m-2 studio pt-2'>
+            <FontAwesomeIcon icon={faComments} size='6x'/>
+        <h2>Thoughts from our clients</h2>
+            <div className='col-md m-2'>
+            <p>Do you need some privacy to work with your producer, some space to think new ideas on your own and your team?</p>
+            <p>Hit After Hit Records is also available for rentals.</p>
+            <p>We understand about writer's block, and if you need some time to rekindle a spark, Hit After Hit offers a cool place to that.</p>
+            <p>Or even maybe, you need a studio for an event, Hit Ater Hit gotcha.</p>
+            </div>
         </div>
-        <div className='row'>
+        <div className='row border rounded mt-5 m-2 book pt-2'>
+            <FontAwesomeIcon icon={faCalendarWeek} size='6x'/>
             <h2>Book a Session</h2>
+            <div className='col-md m-2'>
+                <p>What are you waiting for? Book a session now below</p>
+            </div>
             <div>
-                <button type="submit" className="btn btn-lg btn-outline-dark m-4"><b>Book a Session</b></button>
+                <button type="submit" className="btn btn-lg btn-outline-dark m-4 rounded-pill"><b>Book a Session</b></button>
             </div>
         </div>
     </div>

@@ -5,6 +5,9 @@ export default function Navbar() {
     <div className='sticky-top'>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">
+    <div className='navbar-brand'>
+        <img src='../assets/3.jpeg' alt='logo' width={100} height={100}/>
+    </div>
     <a className="navbar-brand" href="#top">HIT AFTER HIT</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -15,12 +18,13 @@ export default function Navbar() {
                     <ul className="nav navbar-nav navbar-right">
 
                         <li className="nav-item active"><a href="#top" className="nav-link">Home</a></li>
-                        <li className="nav-item"><a href="#services" className="nav-link">Services</a></li>
+                        <li className="nav-item"><a href="#services" className="nav-link active">Services</a></li>
                         <li className="nav-item"><a href="#book" className="nav-link">Book a Session</a></li>
                         <li className="nav-item"><a href="#background" className="nav-link">Background</a></li>
                         <li className="nav-item"><a href="#team" className="nav-link">Our Team</a></li>
                         <li className="nav-item"><a href="#contact" className="nav-link">Contact Us</a></li>
                         <li className="nav-item"><a href="#live" className="nav-link">Live Sessions</a></li>
+                        <li className="nav-item"><a href='#gallery' className='nav-link'>Gallery</a></li>
 
                         
                     </ul>

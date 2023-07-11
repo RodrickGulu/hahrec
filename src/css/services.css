@@ -1,7 +1,29 @@
 .production{
-    background-image: url(../assets/img1.jpg);
+    background-image: url(../assets/pexels-amin-asbaghipour-3710191.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:aliceblue;
+}
+.studio{
+    background-image: url(../assets/6.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color:bisque;
+} 
+
+.studio .btn,.class .btn, .book .btn, .production .btn{
+    color:goldenrod;
+}
+.studio .btn:hover,.class .btn:hover, .book .btn:hover, .production .btn:hover{
+    background-color: goldenrod;
+    color:aliceblue;
+}
+
+.class{
+    background-image: radial-gradient(circle, goldenrod,bisque,aliceblue,transparent);
+}
+.book{
+    background-image: radial-gradient(circle, goldenrod,bisque,aliceblue,transparent);
 }
