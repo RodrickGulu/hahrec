@@ -14,7 +14,7 @@ export default function Services() {
         <div className='row'>
             <h1>Our Services</h1>
         </div>
-        <div className='row production border rounded m-2 pt-2'>
+        <div className='row production rounded m-2 pt-2'>
             <FontAwesomeIcon icon={faMusic} size='6x'/>
             <h2>Music Production</h2>
             <p>Experience the transformative power of our music production services. Our dedicated team of producers, engineers, and musicians is here to bring your musical vision to life.</p>
@@ -26,7 +26,7 @@ export default function Services() {
                 <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill"><b>Book a Session</b></button>
             </div>
         </div>
-        <div className='row border rounded mt-5 m-2 class pt-2'>
+        <div className='row rounded mt-5 m-2 class pt-2'>
         <FontAwesomeIcon icon={faVideoCamera} size='6x'/>
             <h2>Video Production</h2>
             <div className='col-md m-2'>
@@ -37,7 +37,7 @@ export default function Services() {
                 </div>
             </div>
         </div>
-        <div className='row border rounded mt-5 m-2 studio pt-2'>
+        <div className='row rounded mt-5 m-2 studio pt-2'>
             <FontAwesomeIcon icon={faComments} size='6x'/>
         <h2>Thoughts from our clients</h2>
             <div className='col-md m-2'>
@@ -47,7 +47,7 @@ export default function Services() {
             <p>Or even maybe, you need a studio for an event, Hit Ater Hit gotcha.</p>
             </div>
         </div>
-        <div className='row border rounded mt-5 m-2 book pt-2'>
+        <div className='row rounded mt-5 m-2 book pt-2'>
             <FontAwesomeIcon icon={faCalendarWeek} size='6x'/>
             <h2>Book a Session</h2>
             <div className='col-md m-2'>
