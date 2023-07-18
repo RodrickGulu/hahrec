@@ -3,8 +3,7 @@ import '../css/bookasesh.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faMusic,
-    faVideoCamera,
-    faCamera
+    faVideoCamera
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function BookaSesh() {
