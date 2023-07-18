@@ -2,7 +2,7 @@ import React from 'react'
 import label from '../assets/3.jpeg';
 
 
-export default function Navbar({navlink,services,sesh,background,team,contact,live,galla}) {
+export default function Navbar({navlink,services,sesh,background,contact,live,galla}) {
   return (
     <div className='sticky-top'>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -23,7 +23,6 @@ export default function Navbar({navlink,services,sesh,background,team,contact,li
                         <li className="nav-item"><a href="/hitafterhit" className={[navlink+" "+services]}>Services</a></li>
                         <li className="nav-item"><a href="/hitafterhit/book" className={[navlink+" "+sesh]}>Book a Session</a></li>
                         <li className="nav-item"><a href="/hitafterhit/background" className={[navlink+" "+background]}>Background</a></li>
-                        <li className="nav-item"><a href="/hitafterhit/team" className={[navlink+" "+team]}>Our Team</a></li>
                         <li className="nav-item"><a href="/hitafterhit/contact" className={[navlink+" "+contact]}>Contact Us</a></li>
                         <li className="nav-item"><a href="/hitafterhit/live" className={[navlink+" "+live]}>Live Sessions</a></li>
                         <li className="nav-item"><a href='/hitafterhit/gallery' className={[navlink+" "+galla]}>Gallery</a></li>

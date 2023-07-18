@@ -27,3 +27,20 @@
 .book{
     background-image: radial-gradient(circle, goldenrod,bisque,aliceblue,transparent);
 }
+.left{
+    display: block;
+    text-align: left;
+    background-image: linear-gradient(to right, goldenrod,bisque,aliceblue,transparent);
+}
+form{
+    width:60%;
+    margin-left:20%;
+}
+
+@media screen and (max-width:480px) {
+    form{
+        width:100%;
+        margin:0;
+    }
+    
+}

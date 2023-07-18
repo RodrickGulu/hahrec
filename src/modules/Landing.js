@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Landing() {
   const navigate = useNavigate();
 
-  function handleClick(event) {
+  function handleClick(_event) {
 
     navigate('/hitafterhit/book');
   }

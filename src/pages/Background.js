@@ -1,15 +1,15 @@
 import React from 'react'
 import Navbar from '../modules/Navbar'
 import Footer from '../modules/Footer'
-import BookaSesh from '../modules/BookaSesh'
+import About from '../modules/About'
 import Location from '../modules/Location'
 
-export default function Bookings() {
+export default function Background() {
   return (
-    <div className='App'>
+    <div>
       <Location/>
-        <Navbar navlink={"nav-link"} sesh={"active"}/>
-        <BookaSesh/>
+        <Navbar navlink={"nav-link"} background={"active"}/>
+        <About/>
         <Footer/>
     </div>
   )
