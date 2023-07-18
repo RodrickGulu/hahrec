@@ -6,7 +6,7 @@ export default function About() {
     <div className='container-flex m-3 background'>
         <h1>Hit After Hit Background</h1>
         <div className='row'>
-            <div className='col-md class'>
+            <div className='col-md'>
             <h3>About Us</h3>
             <p>Hit After Hit Production is a music and video production studio based at the heart of Gwano Location, in Wenje village - Tana River County</p>
             <p>Born out of love for music on Sunday 7 February 2021, at Hola city. It was later relocated to Wenje village as it is more centrally positioned within the county.</p>

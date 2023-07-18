@@ -6,7 +6,7 @@ import Pics from '../modules/Pics'
 
 export default function Gallery() {
   return (
-    <div>
+    <div className='class'>
         <Location/>
         <Navbar navlink={"nav-link"} galla={"active"}/>
         <Pics/>

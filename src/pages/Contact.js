@@ -6,7 +6,7 @@ import Navbar from '../modules/Navbar'
 
 export default function Contact() {
   return (
-    <div>
+    <div className='class'>
         <Location/>
         <Navbar navlink={"nav-link"} contact={"active"}/>
         <ContactForm/>

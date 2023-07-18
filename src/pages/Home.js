@@ -8,7 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default function Home() {
   return (
-    <div>
+    <div className='class'>
       <Landing/>
       <Navbar navlink={"nav-link"} services={"active"}/>
       <Services/>

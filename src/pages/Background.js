@@ -6,7 +6,7 @@ import Location from '../modules/Location'
 
 export default function Background() {
   return (
-    <div>
+    <div className='class'>
       <Location/>
         <Navbar navlink={"nav-link"} background={"active"}/>
         <About/>

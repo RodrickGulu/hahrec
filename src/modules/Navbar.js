@@ -1,5 +1,15 @@
 import React from 'react'
 import label from '../assets/3.jpeg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faHouse,
+  faBriefcase,
+  faCalendarDays,
+  faHistory,
+  faPhone,
+  faBroadcastTower,
+  faCamera
+} from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Navbar({navlink,services,sesh,background,contact,live,galla}) {
@@ -19,13 +29,13 @@ export default function Navbar({navlink,services,sesh,background,contact,live,ga
 
                     <ul className="nav navbar-nav navbar-right">
 
-                        <li className="nav-item active"><a href="/hitafterhit" className={navlink}>Home</a></li>
-                        <li className="nav-item"><a href="/hitafterhit" className={[navlink+" "+services]}>Services</a></li>
-                        <li className="nav-item"><a href="/hitafterhit/book" className={[navlink+" "+sesh]}>Book a Session</a></li>
-                        <li className="nav-item"><a href="/hitafterhit/background" className={[navlink+" "+background]}>Background</a></li>
-                        <li className="nav-item"><a href="/hitafterhit/contact" className={[navlink+" "+contact]}>Contact Us</a></li>
-                        <li className="nav-item"><a href="/hitafterhit/live" className={[navlink+" "+live]}>Live Sessions</a></li>
-                        <li className="nav-item"><a href='/hitafterhit/gallery' className={[navlink+" "+galla]}>Gallery</a></li>
+                        <li className="nav-item active"><a href="/hitafterhit" className={navlink}><FontAwesomeIcon icon={faHouse}/> Home</a></li>
+                        <li className="nav-item"><a href="/hitafterhit" className={[navlink+" "+services]}><FontAwesomeIcon icon={faBriefcase}/> Services</a></li>
+                        <li className="nav-item"><a href="/hitafterhit/book" className={[navlink+" "+sesh]}><FontAwesomeIcon icon={faCalendarDays}/> Book a Session</a></li>
+                        <li className="nav-item"><a href="/hitafterhit/background" className={[navlink+" "+background]}><FontAwesomeIcon icon={faHistory}/> Background</a></li>
+                        <li className="nav-item"><a href="/hitafterhit/contact" className={[navlink+" "+contact]}><FontAwesomeIcon icon={faPhone}/> Contact Us</a></li>
+                        <li className="nav-item"><a href="/hitafterhit/live" className={[navlink+" "+live]}><FontAwesomeIcon icon={faBroadcastTower}/> Live Sessions</a></li>
+                        <li className="nav-item"><a href='/hitafterhit/gallery' className={[navlink+" "+galla]}><FontAwesomeIcon icon={faCamera}/> Gallery</a></li>
 
                         
                     </ul>

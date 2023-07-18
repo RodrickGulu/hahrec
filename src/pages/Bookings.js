@@ -6,7 +6,7 @@ import Location from '../modules/Location'
 
 export default function Bookings() {
   return (
-    <div className='App'>
+    <div className='App class'>
       <Location/>
         <Navbar navlink={"nav-link"} sesh={"active"}/>
         <BookaSesh/>

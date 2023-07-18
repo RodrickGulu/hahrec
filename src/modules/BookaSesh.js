@@ -9,7 +9,7 @@ import {
 
 export default function BookaSesh() {
   return (
-    <div className='container-flex m-3 class p-5 bookings'>
+    <div className='container-flex m-3 p-5 bookings'>
         <h1>STANDARD PACKAGES</h1>
 <div className='row'>
 <div class="flip-card-container col-sm">
