@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  user-select: none;
 }
 body::-webkit-scrollbar {
   display: none;
