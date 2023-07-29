@@ -6,9 +6,9 @@ import Navbar from '../modules/Navbar'
 
 export default function Live() {
   return (
-    <div>
+    <div className='class'>
         <Location/>
-        <Navbar navlink={"nav-link"} live={"active"}/>
+        <Navbar live={"active"} dropdown={"disabled"}/>
         <LiveSesh/>
         <Footer/>
     </div>

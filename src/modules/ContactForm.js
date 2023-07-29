@@ -1,8 +1,13 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faComments
+} from '@fortawesome/free-solid-svg-icons'
 
 export default function ContactForm() {
   return (
     <div className='container p-5 mt-5 form'>
+      <FontAwesomeIcon icon={faComments} size='5x'/>
         <h3>Leave a Comment</h3>
          <form className='mt-4'>
       <div className='form-floating mb-3 mt-3'>

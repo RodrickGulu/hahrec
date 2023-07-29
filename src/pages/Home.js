@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className='class'>
       <Landing/>
-      <Navbar navlink={"nav-link"} services={"active"}/>
+      <Navbar services={"active"}/>
       <Services/>
       <Footer/>
     </div>

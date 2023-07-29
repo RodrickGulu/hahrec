@@ -2,7 +2,15 @@
     background-image: url('../assets/pexels-dmitry-demidov-3783471.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-      height: 100%;
+}
+@media screen and (max-width:480px) {
+    .landing{
+        font-size: 1%;
+    }
+    .landing img{
+        height: 11rem;
+    }
+    
 }
 .in{
     color:bisque;

@@ -43,7 +43,7 @@ export default function Footer() {
 <div className="container text-center">
     <p className="copyright">&copy;2023 Hit After Hit Records</p>
     <p>All rights reserved</p>
-    <p>Developed by: <a href='https://github.com/RodrickGulu' target='blank'>Rodrick Gulu</a></p>
+    <p id='footer'>Developed by: <a href='https://github.com/RodrickGulu' target='blank'>Rodrick Gulu</a></p>
 </div>
 
 </footer>

@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <div className='class'>
         <Location/>
-        <Navbar navlink={"nav-link"} contact={"active"}/>
+        <Navbar contact={"active"} dropdown={"disabled"}/>
         <ContactForm/>
         <Footer/>
     </div>

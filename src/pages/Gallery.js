@@ -8,7 +8,7 @@ export default function Gallery() {
   return (
     <div className='class'>
         <Location/>
-        <Navbar navlink={"nav-link"} galla={"active"}/>
+        <Navbar galla={"active"} dropdown={"disabled"}/>
         <Pics/>
         <Footer/>
     </div>

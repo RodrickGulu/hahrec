@@ -17,8 +17,8 @@ export default function BookaSesh() {
     <div class="card-front">
       <ul>
         <li><FontAwesomeIcon icon={faMusic} size='9x'/></li>
-        <li>Secular Song - Ksh.4,000/=</li>
-        <li>Gospel - Ksh.3,500/=</li>
+        <li>Secular Song - Ksh 4,000/=</li>
+        <li>Gospel - Ksh 3,500/=</li>
         <li><h4>Offer Package</h4></li>
         <li>Record 3 songs with us, get one chance to record an extra song</li>
         <li></li>
@@ -92,7 +92,7 @@ export default function BookaSesh() {
     <div className="card-front">
       <ul>
         <li><FontAwesomeIcon icon={faVideoCamera} size='9x'/></li>
-        <li>Video Shooting - Ksh.40,000/=</li>
+        <li>Video Shooting - Ksh 40,000/=</li>
       </ul>
     </div>
 
@@ -153,7 +153,7 @@ export default function BookaSesh() {
     <div className="card-front">
       <ul>
         <li><FontAwesomeIcon icon={faMusic} size='9x'/></li>
-        <li>Beat Making - Ksh.1,500/=</li>
+        <li>Beat Making - Ksh 1,500/=</li>
       </ul>
     </div>
 

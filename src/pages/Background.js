@@ -8,7 +8,7 @@ export default function Background() {
   return (
     <div className='class'>
       <Location/>
-        <Navbar navlink={"nav-link"} background={"active"}/>
+        <Navbar background={"active"} dropdown={"disabled"}/>
         <About/>
         <Footer/>
     </div>

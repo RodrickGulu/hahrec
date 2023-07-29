@@ -8,7 +8,7 @@ export default function Bookings() {
   return (
     <div className='App class'>
       <Location/>
-        <Navbar navlink={"nav-link"} sesh={"active"}/>
+        <Navbar sesh={"active"} dropdown={"disabled"}/>
         <BookaSesh/>
         <Footer/>
     </div>

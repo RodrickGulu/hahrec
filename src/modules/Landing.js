@@ -55,7 +55,11 @@ export default function Landing() {
     <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill" onClick={handleClick}><b>Book a Session</b></button>
     </div>
     <div>
-    <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill" href='#services'><b>Explore Website</b></button>
+    <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill page-scroll">
+        <a href="#explore" className='text-reset nav-link'>
+            <b>Explore Website</b>
+        </a>
+    </button>
     </div>
   </div>
       </div>
