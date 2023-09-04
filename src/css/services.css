@@ -22,15 +22,18 @@
 }
 
 .class{
-    background-image: radial-gradient(circle, goldenrod,bisque,aliceblue,transparent);
+    background-color: aliceblue;
 }
 .book{
-    background-image: radial-gradient(circle, goldenrod,bisque,aliceblue,transparent);
+    background-color: aliceblue;
 }
 .left{
     display: block;
     text-align: left;
-    background-image: linear-gradient(to right, goldenrod,bisque,aliceblue,transparent);
+    background-image: url(../assets/1.jpeg);
+    backdrop-filter:var(60%);
+    color: goldenrod;
+    font-weight: bold;
 }
 form{
     width:60%;
@@ -43,4 +46,9 @@ form{
         margin:0;
     }
     
+}
+.comments{
+    color:turquoise;
+    text-align: center;
+    float: right;
 }

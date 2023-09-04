@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/services.css';
 import { useNavigate } from 'react-router-dom';
+import CommentList from './CommentList';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import{
     faVideoCamera,
@@ -47,12 +48,7 @@ export default function Services() {
         <div className='row rounded mt-5 m-2 studio pt-2'>
             <FontAwesomeIcon icon={faComments} size='6x'/>
         <h2>Thoughts from our clients</h2>
-            <div className='col-md m-2'>
-            <p>Do you need some privacy to work with your producer, some space to think new ideas on your own and your team?</p>
-            <p>Hit After Hit Records is also available for rentals.</p>
-            <p>We understand about writer's block, and if you need some time to rekindle a spark, Hit After Hit offers a cool place to that.</p>
-            <p>Or even maybe, you need a studio for an event, Hit Ater Hit gotcha.</p>
-            </div>
+        <CommentList/>
         </div>
         <div className='row rounded mt-5 m-2 pt-2'>
             <FontAwesomeIcon icon={faCalendarWeek} size='6x'/>

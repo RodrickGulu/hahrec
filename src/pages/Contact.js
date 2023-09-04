@@ -4,7 +4,7 @@ import Footer from '../modules/Footer'
 import Location from '../modules/Location'
 import Navbar from '../modules/Navbar'
 
-export default function Contact() {
+export default function Contact(commentt) {
   return (
     <div className='class'>
         <Location/>
