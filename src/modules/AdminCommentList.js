@@ -1,8 +1,7 @@
-// CommentList.js
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react'
 
-function CommentList() {
-  const [comments, setComments] = useState([]);
+export default function AdminCommentList() {
+    const [comments, setComments] = useState([]);
 
   useEffect(() => {
     // Retrieve comments from local storage when the component mounts
@@ -11,13 +10,12 @@ function CommentList() {
   }, []);
 
   return (
-    <div className='comments row m-1'>
+    <div className='row m-1'>
           <table>
             {comments.map((comment, index) => (
               <tr key={index}>
                 <td>
-                  <h3><strong>{comment.author}</strong></h3>
-                  <p>{comment.message}</p>
+                  <strong className='display-6'>{comment.author}</strong> - <i>{comment.email}</i>
                 </td>
               </tr>
             ))}
@@ -25,5 +23,3 @@ function CommentList() {
     </div>
   );
 }
-
-export default CommentList;

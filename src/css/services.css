@@ -14,26 +14,33 @@
 } 
 
 .studio .btn,.class .btn, .book .btn, .production .btn{
-    color:goldenrod;
+    color:whitesmoke;
 }
-.studio .btn:hover,.class .btn:hover, .book .btn:hover, .production .btn:hover{
-    background-color: goldenrod;
-    color:aliceblue;
+.studio .btn:hover, .book .btn:hover, .production .btn:hover{
+    background-color: transparent;
+    color:black;
+}
+.alternative .btn {
+    background-color:black;
+    color:whitesmoke;
+}
+.class .btn:hover{
+    background-color: whitesmoke;
+    color:black;
 }
 
 .class{
-    background-color: aliceblue;
+    background-color: whitesmoke;
 }
 .book{
-    background-color: aliceblue;
+    background-color: whitesmoke;
 }
 .left{
     display: block;
     text-align: left;
-    background-image: url(../assets/1.jpeg);
-    backdrop-filter:var(60%);
-    color: goldenrod;
-    font-weight: bold;
+    background-image: url(../assets/10.jpeg);
+    color: whitesmoke;
+    font-weight: bolder;
 }
 form{
     width:60%;
@@ -48,7 +55,26 @@ form{
     
 }
 .comments{
-    color:turquoise;
     text-align: center;
     float: right;
+    font-weight:bolder;
+}
+.comments h3{
+    color:black;
+}
+.comments p{
+    color:aliceblue;
+}
+.navbar{
+    color:whitesmoke;
+}
+.navbar li a{
+    color:whitesmoke;
+}
+.navbar li a:hover{
+    color:black;
+    background-color: whitesmoke;
+}
+.active{
+   color:goldenrod;
 }

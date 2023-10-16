@@ -19,7 +19,7 @@ import {
 export default function Navbar({services,sesh,background,contact,live,galla,dropdown}) {
   return (
     <div className='sticky-top'>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
     <div className='navbar-brand'>
         <img src={label} alt='logo' width={30} height={30}/>

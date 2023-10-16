@@ -34,7 +34,7 @@ export default function Services() {
                 <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill" onClick={handleClick}><b id='video'>Book a Session</b></button>
             </div>
         </div>
-        <div className='row rounded mt-5 m-2 pt-2'>
+        <div className='row alternative rounded mt-5 m-2 pt-2'>
         <FontAwesomeIcon icon={faVideoCamera} size='6x'/>
             <h2>Video Production</h2>
             <div className='col-md m-2'>
@@ -50,7 +50,7 @@ export default function Services() {
         <h2>Thoughts from our clients</h2>
         <CommentList/>
         </div>
-        <div className='row rounded mt-5 m-2 pt-2'>
+        <div className='row alternative rounded mt-5 m-2 pt-2'>
             <FontAwesomeIcon icon={faCalendarWeek} size='6x'/>
             <h2>Book a Session</h2>
             <div className='col-md m-2'>

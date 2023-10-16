@@ -18,7 +18,7 @@ import {
 export default function Footer() {
   return (
     <div className='m-2'>
-         <footer id="colophon" className="site-footer mt-5 mb-1">
+         <footer id="colophon" className="site-footer mt-5 p-1">
 
 <div className="bg-dark footer row pt-3 container-fluid m-0">
   <ul className='list-unstyled'>
