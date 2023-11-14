@@ -25,3 +25,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 >>>>>>> e9461e546647fec9dd6e9887b6e2559a81bc9f0b
+.vercel
