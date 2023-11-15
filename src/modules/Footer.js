@@ -16,6 +16,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
+
+    const currentYear = new Date().getFullYear();
+  
   return (
     <div className='m-2'>
          <footer id="colophon" className="site-footer mt-5 p-1">
@@ -41,7 +44,7 @@ export default function Footer() {
     </div>
 
 <div className="container text-center">
-    <p className="copyright">&copy;2023 Hit After Hit Records</p>
+    <p className="copyright">&copy;{currentYear} Hit After Hit Records</p>
     <p>All rights reserved</p>
     <p id='footer'>Developed by: <a href='https://github.com/RodrickGulu' target='blank'>Rodrick Gulu</a></p>
 </div>
