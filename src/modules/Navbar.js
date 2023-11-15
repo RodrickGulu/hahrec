@@ -49,11 +49,11 @@ export default function Navbar({services,sesh,background,contact,live,galla,drop
                             </div>
                           </div>
                           </li>
-                        <li className="nav-item"><a href="/hahrec/book" className={["btn nav-link "+sesh]}><FontAwesomeIcon icon={faCalendarDays}/> Book a Session</a></li>
-                        <li className="nav-item"><a href="/hahrec/background" className={["btn nav-link "+background]}><FontAwesomeIcon icon={faHistory}/> Background</a></li>
-                        <li className="nav-item"><a href="/hahrec/contact" className={["btn nav-link "+contact]}><FontAwesomeIcon icon={faComment}/> Contact us/Comment</a></li>
-                        <li className="nav-item"><a href="/hahrec/live" className={["btn nav-link "+live]}><FontAwesomeIcon icon={faBroadcastTower}/> Live Sessions</a></li>
-                        <li className="nav-item"><a href='/hahrec/gallery' className={["btn nav-link "+galla]}><FontAwesomeIcon icon={faCamera}/> Gallery</a></li>
+                        <li className="nav-item"><a href="/book" className={["btn nav-link "+sesh]}><FontAwesomeIcon icon={faCalendarDays}/> Book a Session</a></li>
+                        <li className="nav-item"><a href="/background" className={["btn nav-link "+background]}><FontAwesomeIcon icon={faHistory}/> Background</a></li>
+                        <li className="nav-item"><a href="/contact" className={["btn nav-link "+contact]}><FontAwesomeIcon icon={faComment}/> Contact us/Comment</a></li>
+                        <li className="nav-item"><a href="/live" className={["btn nav-link "+live]}><FontAwesomeIcon icon={faBroadcastTower}/> Live Sessions</a></li>
+                        <li className="nav-item"><a href='/gallery' className={["btn nav-link "+galla]}><FontAwesomeIcon icon={faCamera}/> Gallery</a></li>
 
                         
                     </ul>
