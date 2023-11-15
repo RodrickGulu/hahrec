@@ -33,7 +33,7 @@ export default function Navbar({services,sesh,background,contact,live,galla,drop
 
                     <ul className="nav navbar-nav navbar-right">
 
-                        <li className="nav-item active"><a href="/hahrec" className={"btn nav-link"} id='explore'><FontAwesomeIcon icon={faHouse}/> Home</a></li>
+                        <li className="nav-item active"><a href="/" className={"btn nav-link"} id='explore'><FontAwesomeIcon icon={faHouse}/> Home</a></li>
                         <li className="nav-item">
                           <div className='dropdown'>
                           <a href="#explore" className={["btn nav-link dropdown-toggle "+services+" "+dropdown]} data-bs-toggle='dropdown' aria-expanded='false' id='dropdownMenuLink'>
@@ -41,7 +41,7 @@ export default function Navbar({services,sesh,background,contact,live,galla,drop
                             </a>
 
                             <div className='dropdown-menu'>
-                              <a className='dropdown-item' href='#music'><FontAwesomeIcon icon={faMusic}/> Music Production</a>
+                              <a className='dropdown-item btn nav-link' href='#music'><FontAwesomeIcon icon={faMusic}/> Music Production</a>
                               <a className='dropdown-item' href='#video'><FontAwesomeIcon icon={faVideoCamera}/> Video Production</a>
                               <a className='dropdown-item' href='#comments'><FontAwesomeIcon icon={faComments}/> Comments</a>
                               <div className='dropdown-divider'></div>
