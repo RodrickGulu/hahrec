@@ -1,4 +1,5 @@
 import {useState, React} from 'react'
+import '../css/services.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom';
 import {
@@ -73,7 +74,7 @@ export default function ContactForm() {
     <label htmlFor='message'>Add your comments</label>
       </div>
 
-      <button className='btn btn-lg btn-outline-dark l' type='submit'>SUBMIT</button>
+      <button type="submit" className="btn btn-lg btn-outline-dark m-4 rounded-pill" style={{color: 'black'}}><b>SUBMIT</b></button>
 
     </form>
     </div>

@@ -41,11 +41,11 @@ export default function Navbar({services,sesh,background,contact,live,galla,drop
                             </a>
 
                             <div className='dropdown-menu'>
-                              <a className='dropdown-item btn nav-link' href='#music'><FontAwesomeIcon icon={faMusic}/> Music Production</a>
-                              <a className='dropdown-item' href='#video'><FontAwesomeIcon icon={faVideoCamera}/> Video Production</a>
-                              <a className='dropdown-item' href='#comments'><FontAwesomeIcon icon={faComments}/> Comments</a>
+                              <a className='dropdown-item page-scroll' href='#music'><FontAwesomeIcon icon={faMusic}/> Music Production</a>
+                              <a className='dropdown-item page-scroll' href='#video'><FontAwesomeIcon icon={faVideoCamera}/> Video Production</a>
+                              <a className='dropdown-item page-scroll' href='#comments'><FontAwesomeIcon icon={faComments}/> Comments</a>
                               <div className='dropdown-divider'></div>
-                              <a className='dropdown-item' href='#footer'><FontAwesomeIcon icon={faAngleDoubleDown}/>Scroll to bottom</a>
+                              <a className='dropdown-item page-scroll' href='#footer'><FontAwesomeIcon icon={faAngleDoubleDown}/>Scroll to bottom</a>
                             </div>
                           </div>
                           </li>
