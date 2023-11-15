@@ -15,7 +15,7 @@ export default function Services() {
 
   function handleClick(event) {
 
-    navigate('/hitafterhit/book');
+    navigate('/book');
   }
   return (
     <div className='container-flex m-3 services'>

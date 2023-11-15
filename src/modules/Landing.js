@@ -9,7 +9,7 @@ export default function Landing() {
 
   function handleClick(_event) {
 
-    navigate('/hahrec/book');
+    navigate('/book');
   }
   return (
     <div className='landing container-fluid center pt-4'>
