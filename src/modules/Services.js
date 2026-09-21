@@ -6,59 +6,65 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import{
     faVideoCamera,
     faMusic,
-    faComments,
-    faCalendarWeek
+    faComments
 } from '@fortawesome/free-solid-svg-icons';
 
 export default function Services() {
     const navigate = useNavigate();
 
-  function handleClick(event) {
-
+  function handleBookSession() {
     navigate('/book');
   }
+
   return (
-    <div className='container-flex m-3 services'>
-        <div className='row'>
-            <h1 id='music'>Our Services</h1>
+    <div className='services-container'>
+        <div className='services-header'>
+            <h1>Our Services</h1>
+            <p className='services-subtitle'>Bringing your creative vision to life with professional production services</p>
         </div>
-        <div className='row production rounded m-2 pt-2'>
-            <FontAwesomeIcon icon={faMusic} size='6x'/>
-            <h2>Music Production</h2>
-            <p>Experience the transformative power of our music production services. Our dedicated team of producers, engineers, and musicians is here to bring your musical vision to life.</p>
-            <p>With state-of-the-art studios and cutting-edge technology, we ensure that every element of your music is elevated to new heights.</p>
-            <p>From recording and arrangement to mixing and mastering, our meticulous approach guarantees impeccable sound quality and attention to detail.</p>
-            <p>We work closely with you, capturing your unique style and genre, to create music that resonates with emotion and captivates listeners.</p>
-            <p>Whether you're a solo artist, band, or composer, our tailored music production solutions empower your artistic journey and help you make a lasting impact in the industry.</p>
-            <div>
-                <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill" onClick={handleClick}><b id='video'>Book a Session</b></button>
-            </div>
-        </div>
-        <div className='row alternative rounded mt-5 m-2 pt-2'>
-        <FontAwesomeIcon icon={faVideoCamera} size='6x'/>
-            <h2>Video Production</h2>
-            <div className='col-md m-2'>
-                <p>You want to produce a video song? No problem, Hit After Hit is here for you</p>
-                <p>From concept to delivery, we ensure every frame showcases your story in high-definition brilliance.</p>
-                <div>
-                <button type="submit" className="btn btn-lg btn-outline-dark m-4 rounded-pill" onClick={handleClick}><b id='comments'>Book a Session</b></button>
+
+        {/* Music Production Service */}
+        <div className='service-card production' id='music'>
+            <div className='service-content'>
+                <FontAwesomeIcon icon={faMusic} className='service-icon'/>
+                <h2>Music Production</h2>
+                <div className='highlight-boxx'>
+                <p>Experience the transformative power of our music production services. Our dedicated team of producers, engineers, and musicians is here to bring your musical vision to life.</p>
+                <p>With state-of-the-art studios and cutting-edge technology, we ensure that every element of your music is elevated to new heights.</p>
+                <p>From recording and arrangement to mixing and mastering, our meticulous approach guarantees impeccable sound quality and attention to detail.</p>
+                <p>We work closely with you, capturing your unique style and genre, to create music that resonates with emotion and captivates listeners.</p>
                 </div>
             </div>
         </div>
-        <div className='row rounded mt-5 m-2 studio pt-2'>
-            <FontAwesomeIcon icon={faComments} size='6x'/>
-        <h2>Thoughts from our clients</h2>
-        <CommentList/>
+
+        {/* Video Production Service */}
+        <div className='service-card alternative' id='video'>
+            <div className='service-content'>
+                <FontAwesomeIcon icon={faVideoCamera} className='service-icon'/>
+                <h2>Video Production</h2>
+                <div className='highlight-box'>
+                <p>Looking to produce a professional video song? Hit After Hit is here for you.</p>
+                <p>From concept to delivery, we ensure every frame showcases your story in high-definition brilliance with creative cinematography and post-production excellence.</p>
+                </div>
+            </div>
         </div>
-        <div className='row alternative rounded mt-5 m-2 pt-2'>
-            <FontAwesomeIcon icon={faCalendarWeek} size='6x'/>
-            <h2>Book a Session</h2>
-            <div className='col-md m-2'>
-                <p>What are you waiting for? Book a session now below</p>
+
+        {/* Client Testimonials */}
+        <div className='service-card studio' id='comments'>
+            <div className='service-content'>
+                <FontAwesomeIcon icon={faComments} className='service-icon'/>
+                <h2>What Our Clients Say</h2>
+                <CommentList/>
             </div>
-            <div>
-                <button type="submit" className="btn btn-lg btn-outline-dark m-4 rounded-pill" onClick={handleClick}><b>Book a Session</b></button>
-            </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className='service-cta'>
+            <h2>Ready to Get Started?</h2>
+            <p>Let's create something amazing together</p>
+            <button type="button" className="btn btn-lg btn-primary rounded-pill" onClick={handleBookSession}>
+                <b>Book a Session Now</b>
+            </button>
         </div>
     </div>
   )

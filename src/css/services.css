@@ -1,80 +1,428 @@
-.production{
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.services-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    color: white;
+}
+
+.services-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.services-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin: 0;
+}
+
+.service-card {
+    border-radius: 12px;
+    margin: 30px 20px;
+    padding: 40px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.service-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.service-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.production {
     background-image: url(../assets/pexels-amin-asbaghipour-3710191.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color:aliceblue;
+    color: aliceblue;
 }
-.studio{
+
+.production h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.production p {
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+.studio {
     background-image: url(../assets/6.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color:bisque;
-} 
-
-.studio .btn,.class .btn, .book .btn, .production .btn{
-    color:whitesmoke;
-}
-.studio .btn:hover, .book .btn:hover, .production .btn:hover{
-    background-color: transparent;
-    color:black;
-}
-.alternative .btn {
-    background-color:black;
-    color:whitesmoke;
-}
-.class .btn:hover{
-    background-color: whitesmoke;
-    color:black;
+    color: bisque;
 }
 
-.class{
-    background-color: whitesmoke;
-}
-.book{
-    background-color: whitesmoke;
-}
-.left{
-    display: block;
-    text-align: left;
-    background-image: url(../assets/10.jpeg);
-    color: whitesmoke;
-    font-weight: bolder;
-}
-form{
-    width:60%;
-    margin-left:20%;
+.studio h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
-@media screen and (max-width:480px) {
-    form{
-        width:100%;
-        margin:0;
+.studio .comments {
+    width: 100%;
+}
+
+.alternative {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.alternative h2 {
+    color: #1a1a1a;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.alternative p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+.alternative .service-icon {
+    color: #333;
+}
+
+/* Highlight Boxx */
+.highlight-boxx {
+  background: linear-gradient(
+  90deg,
+  rgba(212, 175, 55, 0.45) 0%,
+  rgba(212, 175, 55, 0.22) 25%,
+  rgba(212, 175, 55, 0.08) 55%,
+  rgba(212, 175, 55, 0) 100%
+);
+
+  border-left: 4px solid #d4af37;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  margin: 20px 0;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* =========================================
+   Service CTA Section
+========================================= */
+
+.service-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #1a1a1a 0%,
+        #333 100%
+    );
+
+    color: white;
+
+    border-radius: 12px;
+
+    margin: 30px 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* Heading */
+
+.service-cta h2 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+    font-weight: 600;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Description */
+
+.service-cta p {
+    font-size: 1.1rem;
+
+    color: #ccc;
+
+    margin: 0 0 30px;
+}
+
+
+/* CTA Button */
+
+.service-cta .btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37 0%,
+        #fbbf24 100%
+    );
+
+    border: none;
+
+    color: #1a1a1a;
+
+    font-size: 1.1rem;
+
+    padding: 12px 40px;
+
+    border-radius: 50px;
+
+    transition: all 0.3s ease;
+
+    margin: 0;
+}
+
+
+/* Hover */
+
+.service-cta .btn:hover {
+    background: linear-gradient(
+        135deg,
+        #9333ea 0%,
+        #c084fc 100%
+    );
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(147, 51, 234, 0.35);
+
+    color: white;
+}
+
+
+/* Active */
+
+.service-cta .btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+    .service-cta {
+        padding: 45px 15px;
+
+        margin: 25px 10px;
     }
-    
+
+    .service-cta h2 {
+        font-size: 1.6rem;
+    }
+
+    .service-cta p {
+        font-size: 0.95rem;
+    }
+
+    .service-cta .btn {
+        font-size: 1rem;
+
+        padding: 11px 28px;
+    }
 }
-.comments{
+
+/* Button Hover Effects */
+.production .btn,
+.studio .btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.production .btn:hover,
+.studio .btn:hover {
+    background-color: white;
+    color: #333;
+}
+
+.alternative .btn {
+    background-color: #d4af37;
+    border: none;
+    color: #0f172a;
+    transition: all 0.3s ease;
+}
+
+.alternative .btn:hover {
+    background-color: #fbbf24;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .services-header h1 {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        margin: 20px 10px;
+        padding: 30px;
+        min-height: 300px;
+    }
+
+    .service-icon {
+        font-size: 3rem;
+    }
+
+    .service-cta {
+        padding: 40px 15px;
+    }
+
+    .service-cta h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .services-header p {
+        font-size: 0.95rem;
+    }
+
+    .service-card {
+        margin: 15px 5px;
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .service-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .service-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .service-card p {
+        font-size: 0.95rem;
+    }
+
+    .service-cta {
+        padding: 30px 15px;
+        margin: 15px 5px;
+    }
+
+    .service-cta h2 {
+        font-size: 1.2rem;
+    }
+
+    .service-cta p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Navbar Styling */
+.navbar {
+    color: whitesmoke;
+}
+
+.navbar li a {
+    color: whitesmoke;
+    transition: all 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 4px;
+}
+
+.navbar-active {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.dropdown-menu {
+    background-color: #222;
+    border: 1px solid #444;
+}
+
+.dropdown-item {
+    color: whitesmoke;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #d4af37;
+    color: #0f172a;
+}
+
+/* Existing Comment Styling */
+.comments {
     text-align: center;
     float: right;
-    font-weight:bolder;
+    font-weight: bolder;
 }
-.comments h3{
-    color:black;
+
+.comments h3 {
+    color: black;
 }
-.comments p{
-    color:aliceblue;
-}
-.navbar{
-    color:whitesmoke;
-}
-.navbar li a{
-    color:whitesmoke;
-}
-.navbar li a:hover{
-    color:black;
-    background-color: whitesmoke;
-}
-.active{
-   color:black;
+
+.comments p {
+    color: aliceblue;
 }

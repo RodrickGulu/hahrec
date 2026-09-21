@@ -1,0 +1,633 @@
+/* =========================================================
+   COMMENT FORM
+========================================================= */
+
+.comment-form-container {
+
+  width: 100%;
+  max-width: 600px;
+
+  margin: 50px auto;
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  background:
+    rgba(255, 255, 255, 0.96);
+
+  border-radius: 18px;
+
+  border: 1px solid
+    rgba(212, 175, 55, 0.18);
+
+  box-shadow:
+    0 10px 35px
+    rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.comment-form-icon {
+
+  width: 60px;
+  height: 60px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #d4af37,
+      #f5d76e
+    );
+
+  color: #1a1a1a;
+
+  font-size: 1.5rem;
+
+  box-shadow:
+    0 5px 15px
+    rgba(212, 175, 55, 0.25);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.comment-form-container h3 {
+
+  margin: 0;
+
+  text-align: center;
+
+  color: #1a1a1a;
+
+  font-size: 2rem;
+
+  font-weight: 700;
+
+}
+
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.comment-form-subtitle {
+
+  margin: 8px 0 30px;
+
+  text-align: center;
+
+  color: #777;
+
+  font-size: 0.9rem;
+
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.comment-form {
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+
+}
+
+
+/* =========================================================
+   FIELD CONTAINER
+========================================================= */
+
+.comment-field {
+
+  position: relative;
+
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.comment-field input,
+.comment-field textarea {
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  display: block;
+
+  padding: 17px 15px 8px;
+
+  border: 2px solid #dedede;
+
+  border-radius: 10px;
+
+  background: #f8f9fa;
+
+  color: #222;
+
+  font-family: inherit;
+
+  font-size: 0.95rem;
+
+  line-height: 1.4;
+
+  outline: none;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+
+/* =========================================================
+   INPUT HEIGHT
+========================================================= */
+
+.comment-field input {
+
+  height: 58px;
+
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.comment-field textarea {
+
+  min-height: 140px;
+
+  max-height: 300px;
+
+  resize: vertical;
+
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.comment-field label {
+
+  position: absolute;
+
+  left: 15px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  padding: 0 5px;
+
+  background: transparent;
+
+  color: #777;
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+
+  pointer-events: none;
+
+  transition:
+    top 0.2s ease,
+    transform 0.2s ease,
+    font-size 0.2s ease,
+    color 0.2s ease,
+    background-color 0.2s ease;
+
+}
+
+
+/* =========================================================
+   TEXTAREA LABEL
+========================================================= */
+
+.textarea-field label {
+
+  top: 22px;
+
+  transform: none;
+
+}
+
+
+/* =========================================================
+   FLOAT LABEL WHEN FOCUSED
+========================================================= */
+
+.comment-field input:focus + label,
+.comment-field textarea:focus + label {
+
+  top: 0;
+
+  transform: translateY(-50%);
+
+  background: white;
+
+  color: #b8962e;
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+}
+
+
+/* =========================================================
+   FLOAT LABEL WHEN INPUT HAS VALUE
+========================================================= */
+
+.comment-field input:not(:placeholder-shown) + label,
+.comment-field textarea:not(:placeholder-shown) + label {
+
+  top: 0;
+
+  transform: translateY(-50%);
+
+  background: white;
+
+  color: #777;
+
+  font-size: 0.75rem;
+
+  font-weight: 600;
+
+}
+
+
+/* =========================================================
+   FOCUS STATE
+========================================================= */
+
+.comment-field input:focus,
+.comment-field textarea:focus {
+
+  background: white;
+
+  border-color: #d4af37;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(212, 175, 55, 0.12);
+
+}
+
+
+/* =========================================================
+   FOCUS LABEL
+========================================================= */
+
+.comment-field input:focus + label,
+.comment-field textarea:focus + label {
+
+  color: #b8962e;
+
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.comment-submit-btn {
+
+  align-self: center;
+
+  min-width: 210px;
+
+  padding: 14px 30px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 50px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #d4af37 0%,
+      #fbbf24 100%
+    );
+
+  color: #171717;
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+
+}
+
+
+/* =========================================================
+   BUTTON HOVER
+========================================================= */
+
+.comment-submit-btn:hover:not(:disabled) {
+
+  background:
+    linear-gradient(
+      135deg,
+      #fbbf24 0%,
+      #d4af37 100%
+    );
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(212, 175, 55, 0.30);
+
+}
+
+
+/* =========================================================
+   BUTTON ACTIVE
+========================================================= */
+
+.comment-submit-btn:active:not(:disabled) {
+
+  transform: translateY(0);
+
+  box-shadow:
+    0 4px 10px
+    rgba(212, 175, 55, 0.20);
+
+}
+
+
+/* =========================================================
+   DISABLED BUTTON
+========================================================= */
+
+.comment-submit-btn:disabled {
+
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+========================================================= */
+
+.form-success-message {
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 16px;
+
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+
+  border: 1px solid #c3e6cb;
+
+  background: #d4edda;
+
+  color: #155724;
+
+  text-align: center;
+
+  font-size: 0.85rem;
+
+  animation:
+    slideInDown 0.3s ease;
+
+}
+
+
+/* =========================================================
+   ERROR MESSAGE
+========================================================= */
+
+.form-error-message {
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 16px;
+
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+
+  border: 1px solid #f5c6cb;
+
+  background: #f8d7da;
+
+  color: #721c24;
+
+  text-align: center;
+
+  font-size: 0.85rem;
+
+  animation:
+    slideInDown 0.3s ease;
+
+}
+
+
+/* =========================================================
+   MESSAGE ANIMATION
+========================================================= */
+
+@keyframes slideInDown {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(-10px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0);
+
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  .comment-form-container {
+
+    margin: 35px 20px;
+
+    padding: 30px 25px;
+
+  }
+
+
+  .comment-form-container h3 {
+
+    font-size: 1.6rem;
+
+  }
+
+
+  .comment-form {
+
+    gap: 19px;
+
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 480px) {
+
+  .comment-form-container {
+
+    margin: 25px 10px;
+
+    padding: 25px 18px;
+
+    border-radius: 14px;
+
+  }
+
+
+  .comment-form-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    font-size: 1.2rem;
+
+  }
+
+
+  .comment-form-container h3 {
+
+    font-size: 1.35rem;
+
+  }
+
+
+  .comment-form-subtitle {
+
+    font-size: 0.8rem;
+
+    margin-bottom: 25px;
+
+  }
+
+
+  .comment-form {
+
+    gap: 17px;
+
+  }
+
+
+  .comment-field input {
+
+    height: 54px;
+
+    font-size: 0.9rem;
+
+  }
+
+
+  .comment-field textarea {
+
+    min-height: 110px;
+
+    font-size: 0.9rem;
+
+  }
+
+
+  .comment-submit-btn {
+
+    width: 100%;
+
+    min-width: 0;
+
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .comment-submit-btn,
+  .comment-field input,
+  .comment-field textarea,
+  .comment-field label {
+
+    transition: none;
+
+  }
+
+}

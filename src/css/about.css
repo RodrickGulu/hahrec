@@ -1,0 +1,153 @@
+/* ================================
+   Modern About Page Styles
+   ================================ */
+
+.background {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 60px 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.background h1 {
+  text-align: center;
+  color: #1a1a1a;
+  font-size: clamp(2rem, 6vw, 3rem);
+  margin-bottom: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.background .row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.background .col-md {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.background h3 {
+  color: #d4af37;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.background h3:first-of-type {
+  margin-top: 0;
+}
+
+.background p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.background b {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+/* Highlight Box */
+.highlight-box {
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.05) 0%, rgba(147, 51, 234, 0.1) 100%);
+  border-left: 4px solid #9333ea;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.highlight-box p {
+  margin-bottom: 0;
+}
+
+/* Animation */
+.background {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .background {
+    padding: 40px 20px;
+    margin: 30px auto;
+  }
+
+  .background h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .background .col-md {
+    padding: 30px;
+  }
+
+  .background h3 {
+    font-size: 1.2rem;
+    margin-top: 25px;
+    margin-bottom: 12px;
+  }
+
+  .background p {
+    font-size: 0.9rem;
+  }
+
+  .highlight-box {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .background {
+    padding: 25px 15px;
+    margin: 20px auto;
+  }
+
+  .background h1 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .background .col-md {
+    padding: 20px;
+  }
+
+  .background h3 {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .background p {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+
+  .highlight-box {
+    padding: 12px;
+    border-left-width: 3px;
+    margin: 15px 0;
+  }
+}

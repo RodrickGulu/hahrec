@@ -1,0 +1,139 @@
+/* ================================
+   Modern Location Info Styles
+   ================================ */
+
+.left {
+  display: block;
+  text-align: left;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: whitesmoke;
+  font-weight: 500;
+  padding: 30px 0;
+  border-bottom: 2px solid #d4af37;
+}
+
+.left .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.location-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.left h5 {
+  color: #c084fc;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.left h5:first-child {
+  margin-top: 0;
+}
+
+.left p {
+  color: #e0e0e0;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 0;
+}
+
+.left p svg {
+  color: #c084fc;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.left p b {
+  color: white;
+  font-weight: 600;
+}
+
+.left p a {
+  color: #c084fc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.left p a:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .left {
+    padding: 25px 0;
+  }
+
+  .left .container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .location-section {
+    min-width: 100%;
+  }
+
+  .left h5 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .left p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    gap: 10px;
+  }
+
+  .left p svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left {
+    padding: 20px 0;
+  }
+
+  .left .container {
+    padding: 0 15px;
+    gap: 20px;
+  }
+
+  .left h5 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .left p {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .left p svg {
+    width: 16px;
+    height: 16px;
+  }
+}

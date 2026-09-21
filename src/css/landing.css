@@ -1,30 +1,280 @@
-.landing{
-    background-image: url('../assets/pexels-dmitry-demidov-3783471.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-@media screen and (max-width:480px) {
-    .landing{
-        font-size: 1%;
-    }
-    .landing img{
-        height: 11rem;
-    }
-    
-}
-.in{
-    color:whitesmoke;
-    display:grid;
-    place-items: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-h1{
-    font-size: 10rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 1000;
+/* ================================
+   Modern Landing Page Styles
+   ================================ */
+
+.landing {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.7) 0%, rgba(51, 51, 51, 0.7) 100%), 
+              url('../assets/pexels-dmitry-demidov-3783471.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
 }
 
-button:hover{
-    background-color: whitesmoke;
-    color:black;
+.landing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
+}
+
+.landing .in {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  max-width: 1000px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.landing img {
+  height: 200px;
+  width: auto;
+  margin-bottom: 30px;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  animation: scaleIn 0.8s ease-out;
+}
+
+.landing h1 {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  animation: slideInUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.landing h2 {
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  animation: slideInUp 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.landing .row {
+  width: 100%;
+  margin-bottom: 20px;
+  animation: slideInUp 0.8s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.landing .row:last-child {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* Typewriter Effect Styling */
+.landing .row p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: #ddd;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Button Styling */
+.landing .btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.landing .btn:hover {
+  background-color: white;
+  color: #1a1a1a;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+}
+
+.landing .btn:active {
+  transform: translateY(-1px);
+}
+
+.landing .nav-link {
+  color: white !important;
+  text-decoration: none;
+}
+
+.explore-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin: 30px 0;
+  padding: 14px 28px;
+
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 193, 7, 0.15),
+    rgba(255, 255, 255, 0.05)
+  );
+
+  border: 1px solid #d4af37;
+  border-radius: 50px;
+
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  color: #1a1a1a;
+  background: linear-gradient(
+    135deg,
+    #ffc107,
+    #d4af37
+  );
+
+  border-color: #ffc107;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 25px rgba(212, 175, 55, 0.35);
+}
+
+.explore-arrow {
+  transition: transform 0.3s ease;
+}
+
+.explore-btn:hover .explore-arrow {
+  transform: translateY(4px);
+}
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .landing {
+    min-height: auto;
+    padding: 60px 20px;
+  }
+
+  .landing .in {
+    padding: 20px 0;
+  }
+
+  .landing img {
+    height: 150px;
+    margin-bottom: 25px;
+  }
+
+  .landing h1 {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+  }
+
+  .landing h2 {
+    font-size: 1.1rem;
+  }
+
+  .landing .row:last-child {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .landing .btn {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .landing {
+    padding: 40px 15px;
+  }
+
+  .landing img {
+    height: 120px;
+  }
+
+  .landing h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .landing h2 {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .landing .row p {
+    font-size: 0.85rem;
+  }
+
+  .landing .btn {
+    padding: 12px 20px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+  }
 }

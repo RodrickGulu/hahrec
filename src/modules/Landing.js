@@ -24,7 +24,8 @@ export default function Landing() {
   <h2>Dedicated to creating good music</h2>
   </div>
   
-  <div className='row mb-3'>
+  <div className="row mb-3 justify-content-center">
+  <div className="col-12 col-md-8 col-lg-7">
   <TypeWriterEffect
   textStyle={{
     color: 'bisque',
@@ -48,6 +49,7 @@ export default function Landing() {
   multiTextDelay={1000}
   typeSpeed={120}
 />
+</div>
   </div>
 
   <div className='row mb-3'>
@@ -55,11 +57,13 @@ export default function Landing() {
     <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill" onClick={handleClick}><b>Book a Session</b></button>
     </div>
     <div>
-    <button type="submit" className="btn btn-lg btn-outline-light m-4 rounded-pill page-scroll">
-        <a href="#explore" className='text-reset nav-link'>
-            <b>Explore Website</b>
-        </a>
-    </button>
+    <a
+  href="#explore"
+  className="explore-btn page-scroll"
+>
+  <span>Explore Website</span>
+  <span className="explore-arrow">↓</span>
+</a>
     </div>
   </div>
       </div>

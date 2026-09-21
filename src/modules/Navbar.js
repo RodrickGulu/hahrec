@@ -1,5 +1,6 @@
 import React from 'react'
 import label from '../assets/3.jpeg';
+import '../css/navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHouse,
@@ -12,7 +13,6 @@ import {
   faVideoCamera,
   faMusic,
   faComments,
-  faAngleDoubleDown
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -36,22 +36,20 @@ export default function Navbar({services,sesh,background,contact,live,galla,drop
                         <li className="nav-item active"><a href="/" className={"btn nav-link"} id='explore'><FontAwesomeIcon icon={faHouse}/> Home</a></li>
                         <li className="nav-item">
                           <div className='dropdown'>
-                          <a href="#explore" className={["btn nav-link dropdown-toggle "+services+" "+dropdown]} data-bs-toggle='dropdown' aria-expanded='false' id='dropdownMenuLink'>
+                          <a href="#services" className={["btn nav-link dropdown-toggle "+services+" "+dropdown]} data-bs-toggle='dropdown' aria-expanded='false' id='dropdownMenuLink'>
                             <FontAwesomeIcon icon={faBriefcase}/> Services
                             </a>
 
-                            <div className='dropdown-menu'>
-                              <a className='dropdown-item page-scroll' href='#music'><FontAwesomeIcon icon={faMusic}/> Music Production</a>
-                              <a className='dropdown-item page-scroll' href='#video'><FontAwesomeIcon icon={faVideoCamera}/> Video Production</a>
-                              <a className='dropdown-item page-scroll' href='#comments'><FontAwesomeIcon icon={faComments}/> Comments</a>
-                              <div className='dropdown-divider'></div>
-                              <a className='dropdown-item page-scroll' href='#footer'><FontAwesomeIcon icon={faAngleDoubleDown}/>Scroll to bottom</a>
+                            <div className='dropdown-menu' aria-labelledby='dropdownMenuLink'>
+                              <a className='dropdown-item' href='#music'><FontAwesomeIcon icon={faMusic}/> Music Production</a>
+                              <a className='dropdown-item' href='#video'><FontAwesomeIcon icon={faVideoCamera}/> Video Production</a>
+                              <a className='dropdown-item' href='#comments'><FontAwesomeIcon icon={faComments}/> Client Testimonials</a>
                             </div>
                           </div>
                           </li>
                         <li className="nav-item"><a href="/book" className={["btn nav-link "+sesh]}><FontAwesomeIcon icon={faCalendarDays}/> Book a Session</a></li>
                         <li className="nav-item"><a href="/background" className={["btn nav-link "+background]}><FontAwesomeIcon icon={faHistory}/> Background</a></li>
-                        <li className="nav-item"><a href="/contact" className={["btn nav-link "+contact]}><FontAwesomeIcon icon={faComment}/> Contact us/Comment</a></li>
+                        <li className="nav-item"><a href="/contact" className={["btn nav-link "+contact]}><FontAwesomeIcon icon={faComment}/> Contact us</a></li>
                         <li className="nav-item"><a href="/live" className={["btn nav-link "+live]}><FontAwesomeIcon icon={faBroadcastTower}/> Live Sessions</a></li>
                         <li className="nav-item"><a href='/gallery' className={["btn nav-link "+galla]}><FontAwesomeIcon icon={faCamera}/> Gallery</a></li>
 

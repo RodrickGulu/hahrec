@@ -1,0 +1,496 @@
+/* =========================================================
+   MODERN COMMENTS SECTION
+========================================================= */
+
+.comments {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 30px auto;
+  padding: 30px 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   COMMENTS HEADER
+========================================================= */
+
+.comments-header {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+
+.comments-header h2 {
+  margin: 0 0 8px;
+
+  color: #1a1a1a;
+
+  font-size: clamp(
+    1.5rem,
+    4vw,
+    2.2rem
+  );
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+
+.comments-header h2::after {
+  content: '';
+
+  display: block;
+
+  width: 60px;
+  height: 3px;
+
+  margin: 10px auto 0;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #d4af37,
+    transparent
+  );
+}
+
+
+.comments-header p {
+  margin: 12px 0 0;
+
+  color: #777;
+
+  font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   COMMENTS LIST
+========================================================= */
+
+.comments-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   COMMENT CARD
+========================================================= */
+
+.comment-card {
+  position: relative;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 22px 25px;
+
+  background:
+    rgba(255, 255, 255, 0.92);
+
+  border: 1px solid
+    rgba(212, 175, 55, 0.15);
+
+  border-left: 4px solid #d4af37;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 5px 15px
+    rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.comment-card:hover {
+  transform: translateY(-3px);
+
+  border-left-color: #b8962e;
+
+  box-shadow:
+    0 10px 25px
+    rgba(212, 175, 55, 0.18);
+}
+
+
+/* =========================================================
+   AUTHOR
+========================================================= */
+
+.comment-author {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   AVATAR
+========================================================= */
+
+.author-avatar {
+  flex-shrink: 0;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #d4af37,
+    #f5d76e
+  );
+
+  color: #1a1a1a;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 3px 8px
+    rgba(212, 175, 55, 0.25);
+}
+
+
+/* =========================================================
+   AUTHOR DETAILS
+========================================================= */
+
+.author-details {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+
+.author-details h3 {
+  margin: 0;
+
+  color: #222;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  overflow-wrap: anywhere;
+}
+
+
+.comment-email {
+  color: #999;
+
+  font-size: 0.75rem;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   COMMENT BODY
+========================================================= */
+
+.comment-body {
+  position: relative;
+
+  padding-left: 54px;
+}
+
+
+.comment-body p {
+  margin: 0;
+
+  color: #555;
+
+  font-size: 0.92rem;
+
+  line-height: 1.7;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   QUOTE MARK
+========================================================= */
+
+.comment-body::before {
+  content: '"';
+
+  position: absolute;
+
+  left: 5px;
+  top: -10px;
+
+  color: rgba(212, 175, 55, 0.3);
+
+  font-family: Georgia, serif;
+
+  font-size: 3rem;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.comments-empty {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  min-height: 180px;
+
+  padding: 35px 20px;
+
+  box-sizing: border-box;
+
+  border: 1px dashed
+    rgba(212, 175, 55, 0.45);
+
+  border-radius: 12px;
+
+  background:
+    rgba(255, 255, 255, 0.6);
+}
+
+
+.empty-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  margin-bottom: 12px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(212, 175, 55, 0.12);
+
+  font-size: 1.4rem;
+}
+
+
+.comments-empty h3 {
+  margin: 0 0 5px;
+
+  color: #444;
+
+  font-size: 1.1rem;
+}
+
+
+.comments-empty p {
+  margin: 0;
+
+  color: #999;
+
+  font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   TABLE FALLBACK
+   =========================================================
+   If another component still renders a table with
+   .comments, these rules prevent the old layout from
+   interfering.
+========================================================= */
+
+.comments table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  .comments {
+    padding: 25px 15px;
+
+    margin: 25px auto;
+  }
+
+
+  .comments-header {
+    margin-bottom: 25px;
+  }
+
+
+  .comments-header p {
+    font-size: 0.85rem;
+  }
+
+
+  .comment-card {
+    padding: 18px 20px;
+  }
+
+
+  .comment-body {
+    padding-left: 45px;
+  }
+
+
+  .comment-body p {
+    font-size: 0.88rem;
+
+    line-height: 1.6;
+  }
+
+
+  .author-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 480px) {
+
+  .comments {
+    padding: 20px 10px;
+
+    margin: 20px auto;
+  }
+
+
+  .comments-header h2 {
+    font-size: 1.4rem;
+  }
+
+
+  .comments-header p {
+    font-size: 0.8rem;
+  }
+
+
+  .comment-card {
+    padding: 16px;
+
+    border-left-width: 3px;
+
+    border-radius: 10px;
+  }
+
+
+  .comment-author {
+    gap: 10px;
+
+    margin-bottom: 12px;
+  }
+
+
+  .author-avatar {
+    width: 36px;
+    height: 36px;
+
+    font-size: 0.85rem;
+  }
+
+
+  .author-details h3 {
+    font-size: 0.9rem;
+  }
+
+
+  .comment-email {
+    font-size: 0.68rem;
+  }
+
+
+  .comment-body {
+    padding-left: 0;
+  }
+
+
+  .comment-body::before {
+    display: none;
+  }
+
+
+  .comment-body p {
+    font-size: 0.82rem;
+
+    line-height: 1.55;
+  }
+
+
+  .comments-empty {
+    min-height: 150px;
+
+    padding: 25px 15px;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .comment-card {
+    transition: none;
+  }
+
+}
