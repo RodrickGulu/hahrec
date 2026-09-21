@@ -4,30 +4,72 @@ import '../css/about.css'
 export default function About() {
   return (
     <div className='background'>
-        <h1>Hit After Hit Records</h1>
-        <div className='row'>
-            <div className='col-md'>
-            <h3>About Us</h3>
-            <p>Hit After Hit Records is a music and video production studio based in the heart of <b>Gwano Location</b>, in <b>Wenje Centre, Tana River County</b>.</p>
-            <p>Born out of a love for music on <b>Friday, 5 February 2021</b>, in <b>Hola Town</b>, it was later relocated to Wenje Centre, which is more centrally positioned within the county.</p>
+      <h1>Hit After Hit Records</h1>
 
-            <div className='highlight-box'>
-              <p><b>Our Main Objective:</b> To produce music that is not only loved by fans, but deeply cherished and worshipped by our loyal audience, who have been truly amazing throughout this journey.</p>
-            </div>
+      <div className='row'>
+        <div className='col-md'>
+          <h3>About Us</h3>
 
-            <p>While we prioritize creating great music, we also focus on producing music with a message. We assure you, you will not be disappointed.</p>
-            <p>Whether it is love, hate, anger, jealousy, crushes, heartbreaks, revenge, immorality, politics, the word of God, salvation, choir, praise, or worship, we have it all.</p>
+          <p>
+            Hit After Hit Records is a music and video production studio based in
+            the heart of <b>Gwano Location</b>, at <b>Wenje Centre, Tana River County</b>.
+          </p>
 
-            <h3>🎯 Motivation</h3>
-            <p>We believe there is untapped potential among the residents of Tana River County, and there is so much talent waiting to be discovered. They simply need modern equipment to elevate their music to the required standard. We aim to provide those facilities and become ambassadors of change.</p>
+          <p>
+            Born out of a passion for music on <b>Friday, 5 February 2021</b>, in
+            <b> Hola Town</b>, Hit After Hit Records was later relocated to Wenje Centre,
+            a more centrally located area within the county.
+          </p>
 
-            <h3>🌟 Vision</h3>
-            <p>To be a beacon of innovative music production in Tana River County and across Kenya.</p>
+          <div className='highlight-box'>
+            <p>
+              <b>Our Main Objective:</b> To produce music that is not only loved
+              by fans but also deeply cherished by our audience. We are committed
+              to creating music that resonates with our listeners and leaves a
+              lasting impact, while remaining grateful for the incredible support
+              we have received throughout our journey.
+            </p>
+          </div>
 
-            <h3>💼 Mission</h3>
-            <p>To produce quality music that is appreciated across the globe.</p>
-            </div>
+          <p>
+            While we are committed to creating great music, we also believe in
+            producing music with meaning and a message. Whatever your story,
+            emotions, or inspiration, we strive to bring it to life through music.
+          </p>
+
+          <h3>🎯 Motivation</h3>
+
+          <p>
+            We believe there is immense untapped talent among the people of
+            Tana River County. There are many talented artists with the potential
+            to make a significant impact, but they often lack access to modern
+            equipment and professional production facilities needed to take their
+            music to the next level.
+          </p>
+
+          <p>
+            Our goal is to bridge this gap by providing accessible, modern
+            production facilities and creating an environment where local talent
+            can grow, develop, and showcase its potential. Through this,
+            we hope to become ambassadors of positive change in the local music
+            industry.
+          </p>
+
+          <h3>🌟 Vision</h3>
+
+          <p>
+            To be a beacon of innovative music and video production in
+            Tana River County and across Kenya.
+          </p>
+
+          <h3>💼 Mission</h3>
+
+          <p>
+            To produce high-quality music and visual content that resonates with
+            audiences and earns appreciation both locally and globally.
+          </p>
         </div>
+      </div>
     </div>
   )
 }
