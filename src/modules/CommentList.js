@@ -8,7 +8,7 @@ function CommentList() {
     const loadComments = async () => {
       try {
         const response = await fetch(
-          'http://localhost:5000/api/comments'
+          'https://hahrec-backend.onrender.com/api/comments'
         );
 
         if (!response.ok) {

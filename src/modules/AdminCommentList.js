@@ -18,7 +18,7 @@ export default function AdminCommentList({ authToken }) {
             setError('');
 
             const response = await fetch(
-                'http://localhost:5000/api/admin/comments',
+                'https://hahrec-backend.onrender.com/api/admin/comments',
                 {
                     headers: {
                         Authorization: `Bearer ${authToken}`
@@ -65,7 +65,7 @@ export default function AdminCommentList({ authToken }) {
         try {
 
             const response = await fetch(
-                `http://localhost:5000/api/admin/comments/${id}`,
+                `https://hahrec-backend.onrender.com/api/admin/comments/${id}`,
                 {
                     method: 'DELETE',
                     headers: {

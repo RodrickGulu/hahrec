@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faStop, faCog, faTv, faCircle, faUsers, faBook } from '@fortawesome/free-solid-svg-icons'
 
 export default function LiveSesh() {
-  const API_BASE = 'http://localhost:5000/api'
+  const API_BASE = 'https://hahrec-backend.onrender.com/api'
 
   const [isLive, setIsLive] = useState(false)
   const [streamUrl, setStreamUrl] = useState('')

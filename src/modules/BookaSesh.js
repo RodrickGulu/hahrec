@@ -112,7 +112,7 @@ export default function BookaSesh() {
     try {
 
       const response = await fetch(
-        'http://localhost:5000/api/book-sesh-music',
+        'https://hahrec-backend.onrender.com/api/book-sesh-music',
         {
           method: 'POST',
 
@@ -173,7 +173,7 @@ export default function BookaSesh() {
     try {
 
       const response = await fetch(
-        'http://localhost:5000/api/book-sesh-video',
+        'https://hahrec-backend.onrender.com/api/book-sesh-video',
         {
           method: 'POST',
 
@@ -234,7 +234,7 @@ export default function BookaSesh() {
     try {
 
       const response = await fetch(
-        'http://localhost:5000/api/book-sesh-beat',
+        'https://hahrec-backend.onrender.com/api/book-sesh-beat',
         {
           method: 'POST',
 

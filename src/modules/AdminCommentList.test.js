@@ -36,7 +36,7 @@ describe('AdminCommentList', () => {
     });
 
     expect(mockFetch).toHaveBeenCalledWith(
-      'http://localhost:5000/api/admin/comments',
+      'https://hahrec-backend.onrender.com/api/admin/comments',
       expect.objectContaining({
         headers: {
           Authorization: 'Bearer admin-token'

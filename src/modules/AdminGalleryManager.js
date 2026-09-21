@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://hahrec-backend.onrender.com';
 
 const toMediaUrl = (value) => {
   if (!value) return '';
@@ -29,7 +29,7 @@ export default function AdminGalleryManager({ authToken }) {
   useEffect(() => {
     const loadGallery = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/gallery');
+        const response = await fetch('https://hahrec-backend.onrender.com/api/gallery');
         if (!response.ok) {
           throw new Error('Unable to load gallery');
         }
@@ -70,7 +70,7 @@ export default function AdminGalleryManager({ authToken }) {
         formData.append('title', title.trim());
       }
 
-      const response = await fetch('http://localhost:5000/api/admin/gallery/upload', {
+      const response = await fetch('https://hahrec-backend.onrender.com/api/admin/gallery/upload', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${authToken}`
@@ -106,7 +106,7 @@ export default function AdminGalleryManager({ authToken }) {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/gallery/${id}`, {
+      const response = await fetch(`https://hahrec-backend.onrender.com/api/admin/gallery/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${authToken}`

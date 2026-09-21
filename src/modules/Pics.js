@@ -4,7 +4,7 @@ import '../css/gallery.css';
 
 Modal.setAppElement('#root');
 
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://hahrec-backend.onrender.com';
 
 const toMediaUrl = (value) => {
   if (!value) return '';
@@ -50,7 +50,7 @@ export default function Pics() {
   useEffect(() => {
     const loadGallery = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/gallery');
+        const response = await fetch('https://hahrec-backend.onrender.com/api/gallery');
         if (!response.ok) {
           throw new Error('Unable to load gallery');
         }
