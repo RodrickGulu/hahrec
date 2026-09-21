@@ -26,24 +26,24 @@ export default function AdminGalleryManager({ authToken }) {
     }));
   };
 
-  const loadGallery = async () => {
-    try {
-      const response = await fetch('http://localhost:5000/api/gallery');
-      if (!response.ok) {
-        throw new Error('Unable to load gallery');
-      }
-
-      const payload = await response.json();
-      setGallery(normalizeGallery(payload.gallery || []));
-    } catch (err) {
-      console.error('Failed to load gallery:', err);
-      setGallery([]);
-    }
-  };
-
   useEffect(() => {
+    const loadGallery = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/api/gallery');
+        if (!response.ok) {
+          throw new Error('Unable to load gallery');
+        }
+
+        const payload = await response.json();
+        setGallery(normalizeGallery(payload.gallery || []));
+      } catch (err) {
+        console.error('Failed to load gallery:', err);
+        setGallery([]);
+      }
+    };
+
     loadGallery();
-  }, [loadGallery]);
+  }, []);
 
   const handleUploadMedia = async (event) => {
     event.preventDefault();
